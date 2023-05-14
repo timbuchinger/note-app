@@ -84,7 +84,7 @@ Rate limiting is implemented with [Flask-Limiter](https://flask-limiter.readthed
 
 ## Authentication
 
-A JWT is returned from the `/api/auth/login` call. For the calls requiring authentication, this token must be passed in a header called `x-access-tokens`.
+A JWT is returned from the `/api/auth/login` call. For the calls requiring authentication, this token must be passed in using a header called `x-access-tokens`.
 
 ## Postman
 

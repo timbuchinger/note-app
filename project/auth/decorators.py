@@ -3,8 +3,6 @@ from functools import wraps
 import jwt
 from flask import current_app, jsonify, request
 
-from ..extensions import mongo
-
 
 def jwt_required(f):
     @wraps(f)

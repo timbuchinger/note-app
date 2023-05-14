@@ -16,8 +16,6 @@ def app():
 
     mongo["users"].delete_many({})
     mongo["notes"].delete_many({})
-    # mongo.drop_collection("users")
-    # mongo.drop_collection("notes")
 
     yield app
 
