@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Flask",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "env": {
+        "FLASK_APP": "project/__init__.py",
+        "FLASK_DEBUG": "1"
+      },
+      "args": ["run", "--no-debugger"],
+      "jinja": true,
+      "justMyCode": true
+    },
+    {
+      "name": "Python: run.py",
+      "program": "./python",
+      "type": "python",
+      "request": "launch",
+      "args": ["run.py", "--no-debugger", "--no-reload"],
+      "jinja": true,
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Test debug config",
+      "type": "python",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "purpose": ["debug-test"],
+      "logToFile": true
+    }
+  ]
+}
